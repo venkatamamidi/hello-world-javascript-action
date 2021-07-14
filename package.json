@@ -19,6 +19,7 @@
   "homepage": "https://github.com/venkatamamidi/hello-world-javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.4.0",
-    "@actions/github": "^5.0.0"
+    "@actions/github": "^5.0.0",
+    "ansi-styles": "^6.1.0"
   }
 }
