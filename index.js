@@ -1,12 +1,12 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const style = require('ansi-styles');
+import styles from 'ansi-styles';
 
 try {
 
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
-  console.log("Hello " +  style.color.ansi16m.hex('#abcdef') + nameToGreet + "!");
+  console.log("Hello " +  styles.green.open + nameToGreet + styles.green.close + "!");
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
