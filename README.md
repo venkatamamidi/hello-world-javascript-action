@@ -20,6 +20,7 @@ The time we greeted you.
 
 ## Example usage
 
-uses: venkatamamidi/hello-world-javascript-action@v1.11
+uses: venkatamamidi/hello-world-javascript-action@v1.12
+
 with:
   who-to-greet: 'Simba the Octocat'
