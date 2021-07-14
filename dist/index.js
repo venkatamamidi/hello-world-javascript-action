@@ -15,14 +15,6 @@ module.exports = eval("require")("@actions/core");
 module.exports = eval("require")("@actions/github");
 
 
-/***/ }),
-
-/***/ 469:
-/***/ ((module) => {
-
-module.exports = eval("require")("ansi-styles");
-
-
 /***/ })
 
 /******/ 	});
@@ -66,14 +58,15 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(450);
 const github = __nccwpck_require__(177);
-const style = __nccwpck_require__(469);
+// const style = require('ansi-styles');
 
 try {
 
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
-  const nameColorHex = "#" + core.getInput('hex-color-code-for-name');
-  console.log("Hello " + style.color.ansi16m.hex(nameColorHex) + nameToGreet + style.color.close + "!");
+  console.log("Hello " + nameToGreet + "!");
+//   const nameColorHex = "#" + core.getInput('hex-color-code-for-name');
+//   console.log("Hello " + style.color.ansi16m.hex(nameColorHex) + nameToGreet + style.color.close + "!");
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow

@@ -5,10 +5,10 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
-  hex-color-code-for-name:  # id of input
-    description: 'RGB color code for the name in hex. E.g: C0FFEE'
-    required: false
-    default: 'C0FFEE'
+  # hex-color-code-for-name:  # id of input
+  #   description: 'RGB color code for the name in hex. E.g: C0FFEE'
+  #   required: false
+  #   default: 'C0FFEE'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
