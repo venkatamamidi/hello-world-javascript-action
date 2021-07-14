@@ -8,6 +8,10 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 **Required** The name of the person to greet. Default `"World"`.
 
+## `hex-color-code-for-name`
+
+**Optional** The HEX code color for the name when greeting. Default `"C0FFEE"`.
+
 ## Outputs
 
 ## `time`
@@ -16,6 +20,6 @@ The time we greeted you.
 
 ## Example usage
 
-uses: actions/hello-world-javascript-action@v1.1
+uses: venkatamamidi/hello-world-javascript-action@v1.11
 with:
   who-to-greet: 'Simba the Octocat'
