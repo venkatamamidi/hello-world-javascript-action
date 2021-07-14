@@ -6,7 +6,8 @@ try {
 
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
-  console.log("Hello " +  styles.green.open + nameToGreet + styles.green.close + "!");
+  const nameColorHex = "#" + core.getInput('hex-color-code-for-name');
+  console.log("Hello " + styles.color.ansi16m(...styles.hexToRgb(nameColorHex)) + nameToGreet + styles.color.close + "!");
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
